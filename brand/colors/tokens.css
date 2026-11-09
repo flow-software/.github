@@ -1,0 +1,24 @@
+/* Flow Software brand palette. Names match the Timebase UI tokens. See palette.md for usage. */
+:root {
+  /* Core */
+  --tb-charcoal:       #1F1F23;
+  --tb-anti-flash:     #F2F2F2;
+  --tb-white:          #FFFFFF;
+  --tb-blue-500:       #31AEE4; /* Timebase Blue */
+  --tb-green-500:      #36E063; /* Infohub Green */
+  --tb-green-800:      #06624E; /* Jungle Green */
+  --tb-blue-logomark:  #0BB6FF; /* Logomark Blue, brand mark only */
+
+  /* Secondary */
+  --tb-blue-600:       #1B81AD; /* Control Blue */
+  --tb-blue-300:       #4CD6F5; /* Lucky Blue */
+  --tb-green-400:      #34D399; /* Lucky Green */
+  --tb-orange-500:     #F59E0B; /* Vivid Orange */
+  --tb-red-500:        #EF4444; /* Coral Red */
+
+  /* Neutrals */
+  --tb-light-gray:     #E5E7EB;
+  --tb-silver-mist:    #D1D5DB;
+  --tb-iron-gray:      #374151;
+  --tb-slate:          #3F3F46;
+}
