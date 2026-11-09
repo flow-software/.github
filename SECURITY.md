@@ -4,7 +4,7 @@
 
 Please do not report security vulnerabilities through public GitHub issues.
 
-Email **TODO: security contact address** with:
+Email [support@timebase.com](mailto:support@timebase.com) with:
 
 - the product and version affected,
 - what the problem is and how to reproduce it,
