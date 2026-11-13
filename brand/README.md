@@ -1,7 +1,8 @@
 # Brand kit
 
 Logos, icons, colors and type for Flow Software, Timebase and Infohub. Take assets from here
-rather than from a product's source tree, so everyone uses the same files.
+rather than from a product's source tree, so everyone uses the same files. The logos and icons were
+cut from the product source trees; each folder's README says which file.
 
 ## What is where
 
