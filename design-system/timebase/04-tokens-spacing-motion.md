@@ -118,8 +118,7 @@ Read from the shared components. Do not add a level without adding it here.
 | z | Layer |
 |---|---|
 | 5 to 8 | Sidebar edge toggle, tab strip internals, workspace corner controls |
-| 30 and 40 | ClaudeP narrow-screen sidebar backdrop and drawer (APP CHOICE) |
-| 100 | Drawer shell (`tb-drawer-shell`) |
+| 100 | Drawer shell (`tb-drawer-shell`), and the narrow-screen sidebar drawer with its backdrop |
 | 150 | Popovers, listboxes, tooltips |
 | 200 | Toast stack, tab context menus, dialog backdrop |
 | 201 | Dialog panel |
