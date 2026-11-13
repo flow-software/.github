@@ -16,11 +16,19 @@ There is no `wordmark`. The ring is the letter O of the name, so the letters alo
 | `white` | `#FFFFFF`, for dark backgrounds |
 | `black` | `#000000` |
 
-The "FLOW SOFTWARE" lockup (with the company name under the logo) exists only as a raster, inside
-[../splash/flow-splash.png](../splash/flow-splash.png). Its SVG master is still to be supplied.
+## Lockup with the company name
+
+`flow-lockup-<color>.svg` and `.png` (1200px wide) put SOFTWARE under the logo, spread to the same
+width as FLOW. The same three colours as above.
+
+This is a rebuild, not the original artwork. The only existing source is the raster in
+[../splash/flow-splash.png](../splash/flow-splash.png), so the layout was traced from it: SOFTWARE is
+about 0.3 of the letter height, with a gap of about 0.44 of the letter height, and spans the full
+width. The letters are Poppins Light turned into outlines; the raster looks like Montserrat. Replace
+these files if the designer has the original.
 
 ## Source
 
 `Infohub/dev/Flow-Server/Server/wwwroot/api/help/logo.svg`, split into letters and ring, with the
-viewBox cropped. Every product in that repo (Flow-Server, Flow-Config, Flow-Installer, the iOS app)
+viewBox cropped (the lockup adds the outlined SOFTWARE line). Every product in that repo (Flow-Server, Flow-Config, Flow-Installer, the iOS app)
 is branded Flow.
