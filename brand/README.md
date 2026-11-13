@@ -1,7 +1,8 @@
 # Brand kit
 
 Logos, icons, colors and type for Flow Software, Timebase and Infohub. Take assets from here
-rather than from a product's source tree, so everyone uses the same files.
+rather than from a product's source tree, so everyone uses the same files. The logos and icons were
+cut from the product source trees; each folder's README says which file.
 
 ## What is where
 
@@ -9,8 +10,11 @@ rather than from a product's source tree, so everyone uses the same files.
 |---|---|
 | `colors/` | The palette: [palette.md](colors/palette.md) to read, `tokens.json` and `tokens.css` to use in code |
 | [typography.md](typography.md) | Typefaces, approved pairings and the type scale |
-| `timebase/logos/`, `infohub/logos/` | Logos per product |
-| `timebase/icons/`, `infohub/icons/` | App icons and favicons per product |
+| `flow/` | Flow Software, the company: logos, icons, installer images, splash screen. Flow Server, Flow Config, the installer and the iOS app are branded Flow |
+| `timebase/` | Timebase: logos, icons, installer images, splash screens |
+| `infohub/` | Infohub: logos and icons. Empty, no Infohub-specific artwork exists in the repos yet |
+
+Each product folder has `logos/`, `icons/` and, where it exists, `installer/` and `splash/`.
 
 ## Files and formats
 
