@@ -22,3 +22,8 @@ the system theme (dark text in light mode, `#F2F2F2` in dark mode). The exports 
 instead, and the viewBox is cropped to the artwork. The mark in the full logo is the same shape as the
 app icon. Its `color` variant is Charcoal because the source draws it that way. The mark alone is
 blue, as in the app icon.
+
+The installer splash draws the whole logo, star and letters, in Timebase Blue
+([../splash/timebase-splash-logo.png](../splash/timebase-splash-logo.png)). The `color` full logo here
+is Charcoal because that is how the source SVG draws it. Which one is the official colour version is
+still to be settled.
