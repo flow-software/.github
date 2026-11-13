@@ -1,6 +1,6 @@
 # 09 Usage rules
 
-How to choose and combine the parts. These rules are the defaults for every Flow and Timebase UI.
+How to choose and combine the parts. These rules are the defaults for every Timebase UI.
 They come from conventions stated in the library's own comments and from how Historian and ClaudeP
 use the parts. Where a rule is this spec's own call, it says so.
 

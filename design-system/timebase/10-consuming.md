@@ -69,7 +69,7 @@ Add the layering rule the library states in `docs/Primitives.md`: apps do not im
 ```js
 'no-restricted-imports': ['error', {
   patterns: [{ group: ['react-aria-components', 'react-aria-components/*'],
-    message: 'Use the Timebase wrapper. If none exists, propose one (see design-system/07-proposals.md).' }],
+    message: 'Use the Timebase wrapper. If none exists, propose one (see design-system/timebase/07-proposals.md).' }],
 }],
 ```
 

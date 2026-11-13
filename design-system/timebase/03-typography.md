@@ -11,7 +11,7 @@ Source: `styles/tokens.css` (`@theme inline` font tokens) and the sizes found in
 | `--font-mono` (`font-mono`) | `"JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace` | Code, identifiers, versions, fixed-width values |
 
 Decision: Inter is the UI body face and Poppins is the heading face. The brand kit
-([brand/typography.md](../brand/typography.md)) and the archived brand system it was taken from say
+([brand/typography.md](../../brand/typography.md)) and the archived brand system it was taken from say
 so ("Never use Poppins for body paragraphs in the app"), and that archived brand system configures
 `sans` as Inter and `display` as Poppins. The library's `tokens.css` currently lists Poppins first in
 `--font-sans`, which makes running text render in Poppins. That is a library defect, not the
