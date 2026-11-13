@@ -6,16 +6,21 @@ Source: `styles/tokens.css` (`@theme inline` font tokens) and the sizes found in
 
 | Token | Stack | Use |
 |---|---|---|
-| `--font-sans` (`font-sans`) | `"Poppins", "Inter", ui-sans-serif, system-ui, sans-serif` | Default UI text |
+| `--font-sans` (`font-sans`) | `"Inter", ui-sans-serif, system-ui, sans-serif` | Default UI text: body, labels, inputs, tables, buttons |
 | `--font-display` (`font-display`) | `"Poppins", ui-sans-serif, system-ui, sans-serif` | Titles: page title, card title, dialog title, KPI value, section headings |
 | `--font-mono` (`font-mono`) | `"JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace` | Code, identifiers, versions, fixed-width values |
 
-Open point, read from code and the brand kit, not resolved here: `font-sans` lists Poppins first, so
-by Tailwind v4's default (the page font follows `--font-sans`) running text renders in Poppins and Inter
-is only the fallback. The brand kit (`brand/typography.md` on branch `feat/RVR/scaffold`) says Poppins
-is for headings and Inter is for UI body, and that Poppins must not set body paragraphs. I did not
-render a page to confirm. Until the library changes `--font-sans`, write against what the tokens say
-and do not hand-set `font-family`. See the appendix.
+Decision: Inter is the UI body face and Poppins is the heading face. The brand kit
+([brand/typography.md](../brand/typography.md)) and the archived brand system it was taken from say
+so ("Never use Poppins for body paragraphs in the app"), and that archived brand system configures
+`sans` as Inter and `display` as Poppins. The library's `tokens.css` currently lists Poppins first in
+`--font-sans`, which makes running text render in Poppins. That is a library defect, not the
+standard. Until it is fixed, an app overrides `--font-sans` to Inter first in its own theme layer. Do
+not hand-set `font-family` anywhere else. Not rendered or confirmed in a browser. See the appendix.
+
+The type scale in the brand kit is the target for headings and body: Poppins SemiBold or Medium for
+Display to H4, Inter for Body, Body small, Caption and Label. The product UI sizes below are what the
+shared components use today, and they sit inside that scale.
 
 Never set `font-family` in app CSS. Use `font-sans`, `font-display` or `font-mono`.
 

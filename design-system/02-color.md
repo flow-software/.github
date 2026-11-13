@@ -33,7 +33,7 @@ Tailwind utility name drops the `--tb-color-` prefix (`--tb-color-card` is `bg-c
 
 | Token | Light | Dark | Purpose |
 |---|---|---|---|
-| `background` | `#FFFFFF` | `#121214` | The page |
+| `background` | `#FFFFFF` | `#121214` | The page. The brand palette calls Charcoal `#1F1F23` the dark background, but the brand system's own role table uses `#121214`, and so does the library. `#121214` is the standard. Charcoal is light-mode text and the dark card family starts above it. |
 | `foreground` | `#1F1F23` | `#F2F2F2` | Default text |
 | `card` | `#F7F7F8` | `#262628` | Containers on the page: cards, panels, drawers, topbar, dialogs, toasts |
 | `card-foreground` | `#1F1F23` | `#F2F2F2` | Text on a card |

@@ -20,6 +20,8 @@ or an app choice, the file says so.
 | 2 | `Timebase.Historian.UI` (`...\Timebase.Historian\src\Timebase.Historian.UI`) | The template for how an app consumes the library, and for structure and tone. |
 | 3 | ClaudeP vendored copy (`...\claudep\feat\RVR\remote-dashboard\src\ui\app\src\design-system`) and its shell (`...\src\shell`) | Cross-check only, plus the source of the patterns the library lacks. |
 
+Brand rules come from [../brand/](../brand/README.md) (palette, [typography](../brand/typography.md)). Where the brand kit and the library disagree the appendix says which one the spec follows and why.
+
 Read on 2026-11-13 at Timebase commit `137b848b9` (the commit the vendored copy was taken from).
 Paths in the tables below are relative to `Timebase.Core.React.UI/src` unless stated.
 

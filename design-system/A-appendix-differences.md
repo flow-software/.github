@@ -62,22 +62,22 @@ Found while reading. They are the library's, not the apps'. Reviewers flag them 
 | 8 | The nav `badge` wrapper is `aria-hidden`, so an attention dot cannot be heard. Collapsed, the dot is the only signal. | `sidebar/timebase-nav-button.tsx` |
 | 9 | The nav components set `data-active` only, not `aria-current`. Apps add it by hand. | `timebase-nav-button.tsx`, `timebase-nav-item.tsx` |
 | 10 | `TimebaseIconButton`'s `tooltip` is optional, so an icon-only button without a tooltip type-checks. | `icon-button/timebase-icon-button.tsx` |
-| 11 | `--font-sans` lists Poppins before Inter, while the brand kit says Inter is the UI body face and Poppins is for headings. | `tokens.css`, brand kit `typography.md` |
-| 12 | The brand kit names Charcoal `#1F1F23` as the dark-mode background. The library's dark page is `#121214` ("Warmer Dark"), and Charcoal is only the light-mode text colour. | brand kit `palette.md`, `tokens.css` |
+| 11 | RESOLVED in the spec, OPEN in the library. `--font-sans` lists Poppins before Inter. The brand kit and the archived brand system both say Inter is the body face. The spec follows the brand. The library needs a one line change. | `tokens.css`, `brand/typography.md`, archived `brand-system.md` |
+| 12 | RESOLVED. The brand kit palette names Charcoal `#1F1F23` as the dark-mode background. The archived brand system's role table and the library both use `#121214` for the dark page. The spec keeps `#121214`. The brand palette wording should be corrected. | `brand/colors/palette.md`, archived `brand-system.md`, `tokens.css` |
 | 13 | Two tone vocabularies: `Tone` uses `error`, `TimebaseKpiTone` uses `destructive`, token names use `destructive`. | `lib/tone-classes.ts`, `kpi-card/timebase-kpi-card.tsx` |
 | 14 | Dot sizes differ: `TimebaseToneDot` is 8px, `TimebaseHealthDot` is 7px, nav badge dots are 6px. | `tone-dot`, `health-dot`, Historian `app-sidebar` and instance button |
 | 15 | The FOUC boot colour for light is `#F2F2F2`, the light page token is `#FFFFFF`. A brief mismatch before the stylesheet loads. | library README, `tokens.css` |
 | 16 | Two comments disagree about the tooltip delay: the tooltip says the RAC default is 1500ms, the icon button says "Base UI's 600". | `tooltip/timebase-tooltip.tsx`, `timebase-icon-button.tsx` |
 | 17 | A source comment records that `property-editor-atlas` still carries copies of the select popover, listbox and empty-state classes that `select-surface.tsx` now owns. | `select/select-surface.tsx` header |
-| 18 | The library README links `docs/UI-STANDARD.md` and a `brand-system.md`. Neither exists in the checkout I read. | `README.md`, `tokens.css` header |
+| 18 | The library README links `docs/UI-STANDARD.md` and a `brand-system.md`. `UI-STANDARD.md` is still missing. `brand-system.md` exists only as an archived copy at `timebase-reviews/main/archive/dev-1.4/Timebase.Atlas/docs/design/brand-system.md`, from the dev-1.4 era. | `README.md`, `tokens.css` header |
 
 ## C. Not verified
 
 - Nothing was run or rendered. Every dimension is read from class strings, not measured in a browser. No screenshots were taken.
 - Contrast ratios in [02-color.md](02-color.md) and the focus ring figures are my calculation from the token hex values, with opaque backgrounds. Translucent tints (badge fills, the 25% ring over a mixed surface) were approximated by blending, not measured in a browser.
-- Not checked against a build: the value of Tailwind's bare `rounded`; that `font-sans` (Poppins) is the default page font; whether the installed `lucide-react` adds `aria-hidden` to icons by default; the tooltip's real default delay.
-- Not found: `docs/UI-STANDARD.md`, `brand-system.md`, and the ADRs the library README cites. The spec does not depend on them.
+- Not checked against a build: the value of Tailwind's bare `rounded`; that `font-sans` (Poppins first) really renders body text in Poppins; whether the installed `lucide-react` adds `aria-hidden` to icons by default; the tooltip's real default delay.
+- Not found: `docs/UI-STANDARD.md` and the ADRs the library README cites. `brand-system.md` was found as an archived copy. The spec does not depend on any of them.
 - Not read in depth: the tab strip, workspace shell internals, property editor, data grid, floating drawer, support menu contents, notification bell, Ask Gage panel, and the other Timebase UIs (Explorer, Portal, Pulse, Atlas, Collector, Bridge, Connect). They are covered here only where Historian or the library comments describe them.
 - The token lint rule was run once against a scratch file, not against a real app. It may flag existing code.
-- The brand kit (`brand/` in this repo) lives on branch `feat/RVR/scaffold`, not `main`. I read it there and did not link to it, so no link in this folder depends on it merging.
+- The brand kit (`brand/` in this repo) is now on `main`, and this spec links to it.
 - The ClaudeP worktree is being edited by another session. What I read may have changed.

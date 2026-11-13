@@ -47,6 +47,7 @@ Record the result as a list of failing IDs, each with the file and line or the s
 |---|---|---|
 | T1 | No `font-family` in app CSS. Only `font-sans`, `font-display`, `font-mono`. | Code |
 | T2 | Fonts load from `@fontsource` (or self-hosted woff2), before `tokens.css`, with `font-display: swap`. No CDN link. | Code |
+| T6 | Running text, labels, inputs and table cells render in Inter. Poppins appears only on `font-display` headings and the brand name. | Shot, Run |
 | T3 | Every font size is one of 9, 10, 10.5, 11, 12, 12.5, 13, 14, 15, 16, 24, 28px (the scale in [03-typography.md](03-typography.md)). | Code |
 | T4 | Headings are `font-display`; no skipped heading level; titles are sentence case; uppercase only on overlines. | Code, Shot |
 | T5 | Identifiers, keys, paths and versions are `font-mono`. Numeric columns, counters and KPI values are `tabular-nums`. | Code |
