@@ -191,7 +191,7 @@ Two models. Choose by app type, do not mix them in one app.
 | Model | When | Container | Scroll |
 |---|---|---|---|
 | Workspace page | Tabbed apps, catalogs, lists that fill the pane (Historian) | `flex flex-col h-full p-7` (28px all sides), full pane width, no max width | The page does not scroll. Its list region is `min-h-0 overflow-auto` and scrolls internally. Header and toolbar are `shrink-0`. |
-| Document page | Single-page apps with stacked sections (ClaudeP) | `mx-auto w-full max-w-content px-4 pb-10 pt-4 sm:px-6 sm:pt-5` | The scroller `flex-1 overflow-y-auto` above it scrolls the whole page. Scroll to top on page change. |
+| Document page | Single-page apps with stacked sections (ClaudeP) | `w-full px-4 pb-6 pt-4` | The scroller `flex-1 overflow-y-auto` above it scrolls the whole page. Scroll to top on page change. |
 
 The library states the convention in code: `DETAIL_PAGE_CONTENT = "p-7"`, "full width with p-7, matching
 every app's page convention", used as `<div className={DETAIL_PAGE_CONTENT}>` inside a
@@ -199,13 +199,12 @@ every app's page convention", used as `<div className={DETAIL_PAGE_CONTENT}>` in
 single-thing page in a tabbed app is: scroller `h-full overflow-y-auto`, content `p-7`, full width.
 That is the library's standard. The library defines no max width.
 
-`APP CHOICE`: the document page is ClaudeP's own. It defines `--container-content: 100rem` (1600px)
-in its own `index.css` `@theme` and uses responsive padding instead of `p-7`. It differs from the
-library convention, see the appendix. Source for Historian: `pages/datasets-page.tsx`,
+`APP CHOICE`: the document page is ClaudeP's own. It uses compact padding instead of `p-7` and, like the
+library, sets no max width, so the content fills the pane on a wide screen. It differs from the library
+convention, see the appendix. Source for Historian: `pages/datasets-page.tsx`,
 `pages/collectors-page.tsx`, `pages/logs-page.tsx`.
 
-Responsive padding for the document page: 16px side and top at phone width, 24px side and 20px top from
-the `sm` breakpoint (640px), 40px bottom always.
+Padding for the document page: 16px on the sides and the top at every width, 24px at the bottom.
 
 ## Scroll container rules
 
