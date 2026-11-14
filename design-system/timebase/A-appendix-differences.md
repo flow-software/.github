@@ -35,7 +35,7 @@ These are not file differences. They are places where ClaudeP's own code makes a
 | Brand | `TimebaseSidebarBrand` and `TimebaseLogo` | Own `Brand`: 26px image and a `font-display text-sm` name |
 | Sidebar footer | Version or user tile | A status block (dot, label, Pause button, note) |
 | Narrow screens | None | Below 760px the sidebar is a drawer |
-| Page container | `p-7`, full width (`DETAIL_PAGE_CONTENT`) | `max-w-content` (1600px) and `px-4 sm:px-6 pt-4 sm:pt-5 pb-10` |
+| Page container | `p-7`, full width (`DETAIL_PAGE_CONTENT`) | full width, `px-4 pt-4 pb-6` |
 | Page actions | A toolbar row in the page | A portal into the topbar slot |
 | Theme boot | Inline script in `index.html` | A module (`theme/boot.ts`), because the CSP forbids inline scripts |
 | Fonts | `@fontsource` imports, Inter 400, 500, 600, mono 400 and 500 | Hand-written `@font-face`, Inter 400 and 500, mono 400 only |
